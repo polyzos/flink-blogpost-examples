@@ -10,7 +10,7 @@ This repository contains the examples used for my Flink blogposts @ [dev.to](htt
 ###  [Understanding Custom Triggers In Apache Flink](https://dev.to/ipolyzos/understanding-custom-triggers-in-apache-flink-5c4m)
 ✅ Code examples can be found [here](https://github.com/polyzos/flink-blogpost-examples/tree/main/src/main/java/io/ipolyzos/triggers).
 
-
+-----------------------
 ### Deploy a JAR file
 You can run the examples directly from your you IDE like IntelliJ IDEA. However, if you want to deploy the jar file to a Flink cluster, you can follow the steps below.
 
