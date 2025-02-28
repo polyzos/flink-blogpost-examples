@@ -3,10 +3,12 @@ Flink Blogpost Examples
 
 This repository contains the examples used for my Flink blogposts @ [dev.to](https://dev.to/ipolyzos).
 
-### Blog Posts
-✅ [**A Deep Dive Into Apache Flink Timers**] - (Coming Soon)
+## Blog Posts
+### [A Deep Dive Into Apache Flink Timers]() - (Coming Soon)
+✅ Code examples can be found [here](https://github.com/polyzos/flink-blogpost-examples/tree/main/src/main/java/io/ipolyzos/timers).
 
-✅ [**Understanding Custom Triggers In Apache Flink**](https://dev.to/ipolyzos/understanding-custom-triggers-in-apache-flink-5c4m)
+###  [Understanding Custom Triggers In Apache Flink](https://dev.to/ipolyzos/understanding-custom-triggers-in-apache-flink-5c4m)
+✅ Code examples can be found [here](https://github.com/polyzos/flink-blogpost-examples/tree/main/src/main/java/io/ipolyzos/triggers).
 
 
 ### Deploy a JAR file
