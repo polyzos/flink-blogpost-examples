@@ -17,12 +17,12 @@ public class SensorProcessorFn extends KeyedProcessFunction<String, SensorReadin
     private ValueState<Long> inactivityTimerState;
 
     // Constants for timer durations
-    private static final long WINDOW_DURATION = 60_000L;       // 1 minute window in ms
+    private static final long WINDOW_DURATION = 60_000L;       // 1 minute window
     private static final long INACTIVITY_THRESHOLD = 10_000L;  // 10 seconds inactivity
 
     @Override
     public void open(OpenContext openContext) throws Exception {
-        // Initialize state descriptors (name, type)
+        // Initialize state descriptors
         sumState = getRuntimeContext()
                 .getState(
                         new ValueStateDescriptor<>("sum", Types.DOUBLE)
@@ -52,7 +52,7 @@ public class SensorProcessorFn extends KeyedProcessFunction<String, SensorReadin
         long eventTime = sensorReading.getTimestamp();
         Long currentWindowEnd = windowEndState.value();
 
-        // 1) Event-Time Timer Logic for windowing (1-minute tumbling windows per sensor)
+        // 1) Event-Time Timer Logic for windowing
         if (currentWindowEnd == null) {
             // This is the first event for this key or the first event after a window reset
             long windowStart = eventTime - (eventTime % WINDOW_DURATION);
